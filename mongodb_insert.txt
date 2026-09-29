@@ -1,0 +1,5 @@
+// MongoDB Insert Commands
+// Copy and paste these into mongosh after connecting
+
+use atomic
+

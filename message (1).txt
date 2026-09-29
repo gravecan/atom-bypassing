@@ -1,0 +1,281 @@
+# VPS File Server - Complete Guide
+
+## Your VPS Info
+- **IP:** 13.221.232.241
+- **SSH Key:** `C:\Users\Opsec\Downloads\sigma.pem`
+- **Username:** ubuntu
+- **File Storage:** `/home/ubuntu/files/`
+
+---
+
+## How to Connect to VPS
+
+From Windows cmd:
+```cmd
+ssh -i "C:\Users\Opsec\Downloads\sigma.pem" ubuntu@13.221.232.241
+```
+
+---
+
+## How to Upload Files
+
+### Upload Single File
+From Windows cmd (NOT in SSH):
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" "C:\path\to\yourfile.dll" ubuntu@13.221.232.241:/home/ubuntu/files/
+```
+
+### Upload Multiple Files at Once
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" "C:\file1.dll" "C:\file2.exe" "C:\file3.txt" ubuntu@13.221.232.241:/home/ubuntu/files/
+```
+
+### Upload Entire Folder
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" -r "C:\path\to\folder" ubuntu@13.221.232.241:/home/ubuntu/files/
+```
+
+### Example - Upload Your Protected DLL
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" "C:\Users\Opsec\Documents\zS1Tv5D\zS1Tv5D\UIEngine\thirdparty\imgui\examples\example_win32_directx11\Release\example_win32_directx11_protected.dll" ubuntu@13.221.232.241:/home/ubuntu/files/atomic.dll
+```
+
+---
+
+## How to Check Files on VPS
+
+SSH into VPS first, then:
+
+### List All Files
+```bash
+ls -lh /home/ubuntu/files/
+```
+
+### List Files with Size
+```bash
+du -sh /home/ubuntu/files/*
+```
+
+### Count Total Files
+```bash
+ls /home/ubuntu/files/ | wc -l
+```
+
+### Check Storage Space
+```bash
+df -h
+```
+
+---
+
+## How to Delete Files
+
+SSH into VPS first, then:
+
+### Delete Single File
+```bash
+rm /home/ubuntu/files/filename.dll
+```
+
+### Delete Multiple Files
+```bash
+rm /home/ubuntu/files/file1.dll /home/ubuntu/files/file2.exe
+```
+
+### Delete All Files in Folder
+```bash
+rm /home/ubuntu/files/*
+```
+
+### Delete Entire Folder
+```bash
+rm -rf /home/ubuntu/files/foldername
+```
+
+### Delete Files by Pattern (e.g., all .dll files)
+```bash
+rm /home/ubuntu/files/*.dll
+```
+
+---
+
+## How to Start Cloudflare Tunnel (Free URL)
+
+SSH into VPS, then run:
+```bash
+cloudflared tunnel --url http://localhost:80
+```
+
+It will print a URL like:
+```
+https://something-random-words.trycloudflare.com
+```
+
+**That's your download link!** Anyone can access files at:
+```
+https://something-random-words.trycloudflare.com/atomic.dll
+```
+
+**IMPORTANT:** Keep that terminal open — closing it kills the tunnel.
+
+---
+
+## How to Download Files from VPS
+
+### Option 1: Via Cloudflare Tunnel (Recommended)
+Start the tunnel on VPS, then from any computer:
+```
+https://YOUR-TUNNEL-URL.trycloudflare.com/filename.dll
+```
+
+### Option 2: Direct IP (No Cloudflare)
+```
+http://13.221.232.241/filename.dll
+```
+
+### Option 3: Download from VPS to Windows
+From Windows cmd:
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" ubuntu@13.221.232.241:/home/ubuntu/files/filename.dll C:\Users\Opsec\Desktop\
+```
+
+---
+
+## File Server Status
+
+### Check if File Server is Running
+```bash
+sudo systemctl status fileserver
+```
+
+Should show `active (running)` in green.
+
+### Restart File Server
+```bash
+sudo systemctl restart fileserver
+```
+
+### Stop File Server
+```bash
+sudo systemctl stop fileserver
+```
+
+### Start File Server
+```bash
+sudo systemctl start fileserver
+```
+
+---
+
+## Common Tasks
+
+### See What Files Are Hosted
+SSH in:
+```bash
+ls -lh /home/ubuntu/files/
+```
+
+### Upload a New DLL
+From Windows:
+```cmd
+scp -i "C:\Users\Opsec\Downloads\sigma.pem" "C:\path\to\new.dll" ubuntu@13.221.232.241:/home/ubuntu/files/
+```
+
+### Delete Old Files
+SSH in:
+```bash
+rm /home/ubuntu/files/oldfile.dll
+```
+
+### Get Shareable Link
+SSH in, start tunnel:
+```bash
+cloudflared tunnel --url http://localhost:80
+```
+Copy the URL and share.
+
+---
+
+## Sharing Access with Friends
+
+Send them the file `C:\Users\Opsec\Downloads\sigma.pem`
+
+They run:
+```cmd
+ssh -i sigma.pem ubuntu@13.221.232.241
+```
+
+They can then upload/delete files the same way you do.
+
+---
+
+## Quick Reference
+
+| Task | Command |
+|------|---------|
+| Connect to VPS | `ssh -i sigma.pem ubuntu@13.221.232.241` |
+| Upload file | `scp -i sigma.pem localfile.dll ubuntu@13.221.232.241:/home/ubuntu/files/` |
+| List files | `ls -lh /home/ubuntu/files/` |
+| Delete file | `rm /home/ubuntu/files/filename.dll` |
+| Start tunnel | `cloudflared tunnel --url http://localhost:80` |
+| Check server status | `sudo systemctl status fileserver` |
+| Check storage | `df -h` |
+
+---
+
+## Troubleshooting
+
+**"Permission denied" when uploading:**
+- Make sure the path `/home/ubuntu/files/` exists on VPS
+- Check with: `ls /home/ubuntu/files/`
+
+**"Connection refused":**
+- Check file server is running: `sudo systemctl status fileserver`
+- Restart it: `sudo systemctl restart fileserver`
+
+**Tunnel URL not working:**
+- Make sure you kept the tunnel terminal open
+- Restart the tunnel: `cloudflared tunnel --url http://localhost:80`
+
+**Can't delete files:**
+- Make sure you're SSH'd into the VPS first
+- Check file exists: `ls /home/ubuntu/files/`
+
+---
+
+## Example Full Workflow
+
+1. **Connect to VPS:**
+   ```cmd
+   ssh -i "C:\Users\Opsec\Downloads\sigma.pem" ubuntu@13.221.232.241
+   ```
+
+2. **Check what's currently hosted:**
+   ```bash
+   ls -lh /home/ubuntu/files/
+   ```
+
+3. **Start Cloudflare tunnel:**
+   ```bash
+   cloudflared tunnel --url http://localhost:80
+   ```
+   Copy the URL (e.g., `https://abc-xyz.trycloudflare.com`)
+
+4. **Open NEW Windows cmd** (don't close SSH), upload your file:
+   ```cmd
+   scp -i "C:\Users\Opsec\Downloads\sigma.pem" "C:\myfile.dll" ubuntu@13.221.232.241:/home/ubuntu/files/
+   ```
+
+5. **Share the download link:**
+   ```
+   https://abc-xyz.trycloudflare.com/myfile.dll
+   ```
+
+6. **When done, delete old files** (in SSH window):
+   ```bash
+   rm /home/ubuntu/files/oldfile.dll
+   ```
+
+---
+
+You're all set!
