@@ -15,6 +15,7 @@ why is he even scared of me when i only crack vibecoded / pasted / scammers / ra
 <img width="572" height="585" alt="image" src="https://github.com/user-attachments/assets/6968cd37-45f1-4dde-af97-d90243a9e267" />
 <img width="897" height="613" alt="image" src="https://github.com/user-attachments/assets/60617e29-b5eb-4139-92dd-31d2e5ce34df" />
 <img width="850" height="930" alt="image" src="https://github.com/user-attachments/assets/07fb3ad5-0028-496f-8576-fd83f92d89b9" />
+<img width="471" height="412" alt="image" src="https://github.com/user-attachments/assets/eab18d60-f122-4a4a-871d-209a84265300" />
 
 # c2 
 https://warranty-kyle-thumbnail-neo.trycloudflare.com/loader.exe <br>
