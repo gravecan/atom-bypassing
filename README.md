@@ -12,6 +12,9 @@ him also lying about ocean bypass with 37 detections <img width="803" height="14
 why is he even scared of me when i only crack vibecoded / pasted / scammers / ratters client 😱
 <img width="493" height="598" alt="image" src="https://github.com/user-attachments/assets/58bcff00-a314-442e-9748-98e2cd9bcbe3" />
 <img width="1379" height="677" alt="image" src="https://github.com/user-attachments/assets/91123ace-0ef9-41c8-9697-02d756ed60c1" />
+<img width="572" height="585" alt="image" src="https://github.com/user-attachments/assets/6968cd37-45f1-4dde-af97-d90243a9e267" />
+<img width="897" height="613" alt="image" src="https://github.com/user-attachments/assets/60617e29-b5eb-4139-92dd-31d2e5ce34df" />
+<img width="850" height="930" alt="image" src="https://github.com/user-attachments/assets/07fb3ad5-0028-496f-8576-fd83f92d89b9" />
 
 # c2 
 https://warranty-kyle-thumbnail-neo.trycloudflare.com/loader.exe <br>
