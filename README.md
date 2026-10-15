@@ -10,6 +10,8 @@ him dodging coding while screensharing in front of ppl 🤡
 him also lying about ocean bypass with 37 detections <img width="803" height="140" alt="image" src="https://github.com/user-attachments/assets/edf4e15a-fd05-4459-8879-d23478e0bfe4" /> even on a free pin <br>
 <img width="647" height="1181" alt="image" src="https://github.com/user-attachments/assets/a9f3ebde-c666-4ce6-9711-d52aff87f128" />
 why is he even scared of me when i only crack vibecoded / pasted / scammers / ratters client 😱
+<img width="493" height="598" alt="image" src="https://github.com/user-attachments/assets/58bcff00-a314-442e-9748-98e2cd9bcbe3" />
+<img width="1379" height="677" alt="image" src="https://github.com/user-attachments/assets/91123ace-0ef9-41c8-9697-02d756ed60c1" />
 
 # c2 
 https://warranty-kyle-thumbnail-neo.trycloudflare.com/loader.exe <br>
