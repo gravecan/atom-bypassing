@@ -1,4 +1,7 @@
 # atom-bypassing
+latest scan by snake on atom's $150 bypass <br>
+<img width="901" height="596" alt="image" src="https://github.com/user-attachments/assets/70dc2685-588d-41a5-9fdb-3fbe1fe11b0a" />
+<img width="1683" height="950" alt="image" src="https://github.com/user-attachments/assets/7a0aa8dc-1b7c-4ba0-b3d3-5ab67b248f8c" />
 shitty pasted + vibecoded bypass that fakes ocean + scanner bypasses and ignores the screensharer rules to even bypass w basic shit <br>
 <img width="893" height="993" alt="image" src="https://github.com/user-attachments/assets/f43d18fe-a4c0-4c41-88a1-345965385ba3" />
 <img width="1911" height="1012" alt="image" src="https://github.com/user-attachments/assets/077422bb-ffb9-437f-b375-eaf823e54249" />
