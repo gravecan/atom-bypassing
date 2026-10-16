@@ -1,5 +1,8 @@
 # atom-bypassing
 shitty pasted + vibecoded bypass that fakes ocean + scanner bypasses and ignores the screensharer rules to even bypass w basic shit <br>
+<img width="893" height="993" alt="image" src="https://github.com/user-attachments/assets/f43d18fe-a4c0-4c41-88a1-345965385ba3" />
+<img width="1911" height="1012" alt="image" src="https://github.com/user-attachments/assets/077422bb-ffb9-437f-b375-eaf823e54249" />
+poor ass fag flexing free scans pin <br>
 <img width="635" height="384" alt="image" src="https://github.com/user-attachments/assets/521eb511-77b2-4902-83ec-caf9a21820b2" />
 <img width="1004" height="855" alt="image" src="https://github.com/user-attachments/assets/5c32155c-1513-4f53-b107-e8bb3fcf86df" /> 
 <img width="568" height="655" alt="image" src="https://github.com/user-attachments/assets/9c1f0566-699a-49a0-b54f-985bb0bdb10e" />
